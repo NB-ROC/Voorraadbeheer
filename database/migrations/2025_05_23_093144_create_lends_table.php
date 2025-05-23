@@ -13,7 +13,9 @@ return new class extends Migration
     {
         Schema::create('lends', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table ->unsignedBigInteger('usersID');
+            $table->timestamp('orderDate');
+            $table->enum('lendStatus',['Lend', 'Returned']);
         });
     }
 

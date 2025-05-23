@@ -12,7 +12,9 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('lend_products', function (Blueprint $table) {
-            $table->id();
+            $table->unsignedBigInteger('lendID');
+            $table->unsignedBigInteger('productID');
+            $table->integer('quantity');
             $table->timestamps();
         });
     }

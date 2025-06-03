@@ -10,19 +10,22 @@
     <title>Dashboard</title>
 </head>
 <body>
-    <div class="angled-bg"></div>
+    @include("components.background-styling")
 
     @include("components.header")
 
     <main class="buttons-container">
         <div class="mainpage-containers borrow-container">
-            <h1>Lenen</h1>
-            <a href="#">
-                <img src="{{asset('images/lenen-icon.png')}}" alt="">
+            <h1 class="usefull-title">Lenen</h1>
+            <a class="interface-button" href="/items">
+                <img src="{{asset('images/lend.svg')}}" alt="">
             </a>
         </div>
         <div class="mainpage-containers return-container">
-            <h1>Leveren</h1>
+            <h1 class="usefull-title">Retouneren</h1>
+            <a class="interface-button" href="#">
+                <img src="{{asset('images/submit.svg')}}" alt="">
+            </a>
         </div>
     </main>
 </body>

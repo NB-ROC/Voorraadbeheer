@@ -6,25 +6,33 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <title>{{ config('app.name', 'Laravel') }}</title>
-
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+        <!-- CSS LINK -->
+        <link rel="stylesheet" href="{{asset('css/style.css')}}">
+        <!-- FONTS LINK -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
         <!-- Scripts -->
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body class="font-sans text-gray-900 antialiased">
-        <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100">
-            <div>
-                <a href="/">
-                    <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
-                </a>
-            </div>
+    <body class="font-sans">
 
-            <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg">
-                {{ $slot }}
-            </div>
+        @include("components.background-styling")
+
+        <div class="login-page-container">
+                <div class="loging-form-container
+                @if (request()->routeIs('login')) login-size-login
+                @elseif (request()->routeIs('register')) login-size-register
+                @endif">
+
+                    @if (request()->routeIs('login'))
+                        <h1 class="loginpage-title">Aanmelden</h1>
+                    @elseif (request()->routeIs('register'))
+                        <h1 class="loginpage-title">Registreren</h1>
+                    @endif
+
+                    {{ $slot }}
+                </div>
         </div>
     </body>
 </html>

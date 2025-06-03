@@ -28,16 +28,15 @@ header {
     display: inline-block;
     margin-right: 50px;
 }
-
 .login-button {
-    width: 10vw;
+    font-size: 20px;
     padding: 1rem;
-    color: #8A8AC2;
     text-align: center;
     font-weight: 600;
-    border-radius: 1.5rem;
+    border-radius: 1rem;
     border: 2px solid #8A8AC2;
     background-color: white;
+    color: #402E56;
 }
 .login-button:hover {
     border: 2px solid #402E56;
@@ -62,6 +61,119 @@ header {
     gap:  4rem;
 }
 .mainpage-containers{
-    background-color: deepskyblue;
+    height: 400px;
+    width:  25%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.usefull-title{
+    font-size: 2.5rem;
+}
+.interface-button{
+    height: 80%;
+    width:  100%;
+    background-color: white;
+    border: solid #8A8AC2 2px;
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 4px 20px -4px rgba(0, 0, 0, 0.25);
+}
+.interface-button:active{
+    box-shadow: none;
+}
+.interface-button>img{
+    height: 75%;
+    width: 75%;
+    object-fit: contain;
 }
 
+/* Login/Register page styling */
+.login-page-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.login-size-login{
+    height: 50%;
+    width: 30%;
+    padding: 25px;
+    display: flex;
+    background-color: #FFFFFF;
+    flex-direction: column;
+    border-top-right-radius:  30px;
+    border-bottom-left-radius: 30px;
+    box-shadow: 4px 4px 20px -4px rgba(0, 0, 0, 0.25);
+}
+.login-size-register{
+    height: 65%;
+    width: 35%;
+    padding: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #FFFFFF;
+    flex-direction: column;
+    border-top-right-radius:  30px;
+    border-bottom-left-radius: 30px;
+    box-shadow: 4px 4px 20px -4px rgba(0, 0, 0, 0.25);
+}
+.loginpage-title{
+    font-size: 3rem;
+    color: #402E56;
+    font-weight: bold;
+}
+.login-input{
+    width: 100%;
+}
+.register-name-input-container{
+    display: flex;
+    gap: 1rem;
+}
+.register-inputs-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+.input-properties{
+    height: 50px;
+    box-shadow: inset 0 0 2.5px rgba(0, 0, 0, 0.5);
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    border-radius: 6px;
+    outline: none;
+}
+.name-input{
+    width: 50%;
+}
+.big-input{
+    width: 100%;
+}
+.register-buttons-cont{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}
+.submit-button{
+    height: 50px;
+    width: 25%;
+    background-color: #FFFFFF;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 1.5rem;
+    border: 2px solid #8A8AC2;
+    color: #402E56;
+    box-shadow: 4px 4px 20px -4px rgba(0, 0, 0, 0.25);
+}
+.submit-button:hover {
+    border: 2px solid #402E56;
+    color: #402E56;
+}
+.submit-button:active{
+    box-shadow: none;
+}

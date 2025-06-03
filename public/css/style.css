@@ -90,7 +90,6 @@ header {
     width: 75%;
     object-fit: contain;
 }
-
 /* Login/Register page styling */
 .login-page-container{
     display: flex;
@@ -176,4 +175,10 @@ header {
 }
 .submit-button:active{
     box-shadow: none;
+}
+/* Items Container */
+.items-container{
+    height: auto;
+    width: 100%;
+    background-color: red;
 }

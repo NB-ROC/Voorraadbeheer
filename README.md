@@ -1,66 +1,30 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Voorraadbeheer
+Dit project is een digitaal systeem voor het uitlenen en terugbrengen van schoolmaterialen. Het systeem is bedoeld om admins en gebruikers overzicht te geven in wat is uitgeleend, aan wie en wanneer het terug moet.
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Functionaliteiten 
+* Inloggen en registreren van gebruikers
+* Producten zoeken en reserveren
+* Producten uitlenen en leveren
+* Dashboard voor beheerders om producten en gebruikers te beheren.
+* Overzicht van geleende producten per gebruiker
 
-## About Laravel
+## Technieken
+* Backend: Laravel (PHP), MySQL
+* Frontend: HTML, CSS, JavaScript
+* Tools: GitHub, Figma, Trello(Scrum)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Gebruikersrollen
+* **Lener:** Kan producten bekijken, reserveren, lenen en leveren
+* **Docent:** Kan ook net als leners producten lenen en leveren, maar met beperkte rechten in het beheren.
+* **Beheerder:** Heeft toegang tot het dashboard en kan producten en gebruikers beheren
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+** Links
+* [GitHub Wiki](https://github.com/NB-ROC/Voorraadbeheer/wiki) - Uitleg over de project Structuur, functies en planning
+* [Figma Design](https://www.figma.com/design/MhCfFMRGoBNq44FpiHbdS5/VooraadBeheer-Roc?node-id=0-1&t=qHMScVmXcXCDQCWb-1)
+* [Trello Bord](https://trello.com/invite/b/67bec7c06401b5961a81ae7f/ATTIcbcebe31ac18dc7bd784db8b361312e427B459C5/voorraadbeheer-project) - Scrumplanning
+* [ERD](https://lucid.app/lucidchart/4993c623-8515-4f3b-9b60-9232d26da39f/edit?viewport_loc=-1753%2C-304%2C3158%2C1585%2C0_0&invitationId=inv_a7c7530b-fa26-4445-ace3-5a1ce0a6a980) - Database structuur
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+** Projectgroep
+* [Elco Terwoert](https://github.com/ElcoTerwoert)
+* [Osama Alasmi](https://github.com/osama0210)
+* [Ahmad Alasmi](https://github.com/aatje-sy)

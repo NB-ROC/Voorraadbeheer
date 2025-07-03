@@ -180,5 +180,53 @@ header {
 .items-container{
     height: auto;
     width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.item{
+    height: 300px;
+    width: 22%;
+    padding: 15px;
+    background-color: #FFFFFF;
+    border: 2px solid #8A8AC2;
+    border-radius:  1.3rem;
+    box-shadow: 4px 4px 20px 0 rgba(138, 138, 194, 0.5);
+    text-decoration: none;
+    color:  #000000;
+    gap:  1.5rem;
+}
+.image-container{
+    height: 50%;
+    width: 100%;
     background-color: red;
+    border-top-right-radius: 1.3rem;
+    border-top-left-radius:  1.3rem;
+}
+.item-properties-container{
+    display:  flex;
+}
+.item-propertie{
+    height: 30px;
+    width: 60px;
+    background-color:  #8A8AC2;
+    border: 2px solid #402E56;
+    border-radius: 1rem;
+}
+.add-button-container{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.add-button{
+    height: 100%;
+    width: 23%;
+    background-color: #8A8AC2;
+    border: 2px solid #402E56;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

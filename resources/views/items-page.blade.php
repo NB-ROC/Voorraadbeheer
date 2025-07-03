@@ -14,7 +14,30 @@
     @include("components.header")
 
     <div class="items-container">
+        <a class="item" href="#">
+            <div class="image-container">
+                <img src="{{ asset('images/lend.svg') }}" alt="">
+            </div>
+            <div>
+                <h1>ItemName</h1>
+                <div class="item-properties-container">
+                    <div class="item-propertie">
 
+                    </div>
+                </div>
+            </div>
+            <div class="add-button-container">
+                <div class="add-button">
+                    <img src="{{ asset('images/plus-icon.svg') }}" alt="">
+                </div>
+            </div>
+        </a>
+        <a class="item" href="#">
+
+        </a>
+        <a class="item" href="#">
+
+        </a>
     </div>
 
 </body>
